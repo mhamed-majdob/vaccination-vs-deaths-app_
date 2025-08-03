@@ -1,0 +1,100 @@
+# Do COVID-19 Vaccination Rates Correlate with Reduced Excess Deaths?
+### A Data Science Project Using Real-World Global Data
+
+---
+
+## Overview
+
+Vaccination has been one of the key public health strategies in managing the COVID-19 pandemic. But how effective were vaccines in reducing **excess deaths** — the number of deaths beyond what would be expected in a normal year?
+
+In this project, I analyzed publicly available data to explore whether higher COVID-19 vaccination rates are associated with lower excess mortality in five countries. The goal was to uncover patterns, quantify relationships, and practice an end-to-end data science workflow using real-world data.
+
+---
+
+## Key Objectives
+- Analyze time trends in vaccination rates and excess deaths
+- Measure the strength of the relationship using linear regression
+- Compare the results across different countries
+
+---
+
+## Data Sources
+All data used in this project comes from **Our World in Data**, a public data repository:
+- [COVID-19 Vaccination Data](https://ourworldindata.org/covid-vaccinations)
+- [Excess Mortality Data](https://ourworldindata.org/excess-mortality-covid)
+
+---
+
+## Tools Used
+- **Python**: Data analysis and visualization
+- **pandas**: Data cleaning and manipulation
+- **matplotlib**: Visualization
+- **scikit-learn**: Linear regression analysis
+
+---
+
+## Methodology Summary
+
+1. **Data Cleaning**
+   - Handled missing values and merged two datasets on country and date.
+   - Focused on five countries: India, United States, Brazil, Germany, Bangladesh.
+
+2. **Exploratory Data Analysis (EDA)**
+   - Plotted vaccination rates and excess deaths over time for each country.
+   - Observed trends and potential relationships.
+
+3. **Regression Analysis**
+   - Applied simple linear regression to assess how changes in vaccination rates related to excess deaths.
+   - Calculated slope and R² score for each country.
+
+4. **Result Export**
+   - Saved regression results to a CSV file for easy comparison and reference.
+
+---
+
+## Results Overview
+
+| Country       | Slope      | R² Score | Interpretation                              |
+|---------------|------------|----------|---------------------------------------------|
+| India         | -0.0271    | 0.23     | Vaccination helped; moderate effect         |
+| United States | -0.0240    | 0.43     | Strong impact; vaccination explained 43% of change |
+| Brazil        | -0.0139    | 0.17     | Modest effect; other factors involved       |
+| Germany       | -0.0192    | 0.37     | Significant reduction in deaths; good fit   |
+| Bangladesh    | -0.0113    | 0.08     | Weak effect; data may be noisy or limited   |
+
+> Note: Negative slopes indicate that increased vaccination rates are associated with decreased excess deaths.
+
+---
+
+## Key Takeaways
+
+- In all countries, higher vaccination rates were associated with **lower excess deaths**, though the strength of the relationship varied.
+- The strongest relationship was observed in the **United States** and **Germany**, suggesting a clearer impact of vaccination.
+- In countries like **Bangladesh**, the weaker relationship may be due to data quality, reporting issues, or other public health factors.
+
+---
+## About This Project
+- This project was completed as a personal data science portfolio piece, focusing on end-to-end skills:
+
+- Sourcing real-world data
+
+- Cleaning and merging datasets
+
+- Performing meaningful analysis
+
+- Presenting findings clearly and visually
+
+
+
+## Author
+-Mohammed Majdoub
+- Aspiring Data Scientist
+- LinkedIn: Mohammed Majdoub | GitHub: mhamed-majdob
+
+Feel free to connect or provide feedback!
+
+## License
+Data is sourced from Our World in Data under Creative Commons.
+This project is open-source and free to use with attribution.
+
+
